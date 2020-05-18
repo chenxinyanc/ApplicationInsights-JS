@@ -121,6 +121,12 @@ module.exports = function (grunt) {
                 ],
                 out: './extensions/applicationinsights-dependencies-js/Tests/Selenium/dependencies.tests.js'
             },
+            internplugin: {
+                tsconfig: './extensions/applicationinsights-internplugin-js/tsconfig.json',
+                src: [
+                    './extensions/applicationinsights-internplugin-js/*.ts',
+                ]
+            },
             aichannel: {
                 tsconfig: './channels/applicationinsights-channel-js/tsconfig.json'
             },
@@ -399,6 +405,7 @@ module.exports = function (grunt) {
     grunt.registerTask("reactnativetests", ["qunit:reactnative"]);
     grunt.registerTask("deps", ["ts:deps"]);
     grunt.registerTask("depstest", ["ts:deps", "ts:depstest", "qunit:deps"]);
+    grunt.registerTask("internplugin", ["ts:internplugin"]);
     grunt.registerTask("aichannel", ["ts:aichannel"]);
     grunt.registerTask("aichanneltest", ["ts:aichannel", "ts:aichanneltest", "qunit:aichannel"]);
     grunt.registerTask("rollupes3", ["ts:rollupes3", "ts:rollupes3test", "qunit:rollupes3"]);
