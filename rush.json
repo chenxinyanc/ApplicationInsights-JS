@@ -32,6 +32,11 @@
       "shouldPublish": true
     },
     {
+      "packageName": "@microsoft/applicationinsights-internplugin-js",
+      "projectFolder": "extensions/applicationinsights-internplugin-js",
+      "shouldPublish": false
+    },
+    {
       "packageName": "@microsoft/applicationinsights-analytics-js",
       "projectFolder": "extensions/applicationinsights-analytics-js",
       "shouldPublish": true

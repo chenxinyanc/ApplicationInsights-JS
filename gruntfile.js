@@ -125,6 +125,7 @@ module.exports = function (grunt) {
                 tsconfig: './extensions/applicationinsights-internplugin-js/tsconfig.json',
                 src: [
                     './extensions/applicationinsights-internplugin-js/*.ts',
+                    './extensions/applicationinsights-internplugin-js/components/*.ts',
                 ]
             },
             aichannel: {
